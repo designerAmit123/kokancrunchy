@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Kokan Crunchy - Top quality Dry-Fruits Products| Registration</title>
+	<title>Register Account | Kokan Crunchy</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="Grocery Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
@@ -9,460 +9,351 @@
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
 		}, false);
-
 		function hideURLbar() {
 			window.scrollTo(0, 1);
 		}
 	</script>
-	<!--//tags -->
 	<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.23/default/snipcart.css" />
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/font-awesome.css" rel="stylesheet">
-	<!--pop-up-box-->
 	<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
-	<!--//pop-up-box-->
-	<!-- price range -->
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui1.css">
-	<!-- fonts -->
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/minicart/3.0.5/minicart.min.js"></script>
-	
 </head>
-<body class="reg-bg">
-<div>
-		<div class="modal-dialog">
-			
-			<div class="modal-content">
-				
-				<div class="modal-body modal-body-sub_agile">
-					<div class="main-mailposi">
-						<a href="../index.php"><img src="../images/kokan-crunchy-logo.jpg" class="img-center"></a>
+<body>
+	<nav id="top">
+		<div class="container">
+			<div id="top-links" class="nav pull-right">
+				<ul class="list-inline">
+					<li>Minimum order value is greater than Rs. 1000</li>
+					<li>
+						<a href="#"><i class="fa fa-phone"></i></a>
+						<span class="hidden-xs hidden-sm hidden-md">9821236048</span>
+					</li>
+					<li class="dropdown">
+						<a href="#" title="My Account" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="fa fa-user"></i>
+							<span class="hidden-xs hidden-sm hidden-md">My Account</span>
+							<span class="caret"></span>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a href="registration.html">Register</a></li>
+								<li><a href="login.html">Login</a></li>
+							</ul>
+						</a>
+					</li>
+					<li>
+						<a href="login.html" id="wishlist-total" title="Wish List (0)">
+							<i class="fa fa-heart"></i>
+							<span class="hidden-xs hidden-sm hidden-md">Wish List (0)</span>
+						</a>
+					</li>
+					<li>
+						<a href="" title="Shopping Cart">
+							<i class="fa fa-shopping-cart"></i>
+							<span class="hidden-xs hidden-sm hidden-md">Shopping Cart</span>
+						</a>
+					</li>
+					<li>
+						<a href="" title="Checkout"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md">Checkout</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div id="logo">
+						<a href="index.html">
+							<img src="images/kokan-crunchy-logo.png" title="Kokan Crunchy" width="100px" alt="Kokan Crunchy" class="img-responsive">
+						</a>
 					</div>
-					<div class="modal_body_left modal_body_left1">
-						<h3 class="agileinfo_sign">Sign Up</h3>
-						<p>
-							Come join the Kokan Crunchy! Let's set up your Account. Already have an account?
-							<a href="login.php">
-								Login Now</a>
-						</p>
-						
-						<form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
-							<div class="styled-input agile-styled-input-top">
-								<input type="text" placeholder="Name" name="name" required="">
-							</div>
-							<div class="styled-input">
-								<input type="email" placeholder="E-mail" name="email" required="">
-							</div>
-                            <div class="styled-input">
-								<input type="number" placeholder="Mobile No." name="mobile" required="">
-							</div>
-							<div class="styled-input" id="show_hide_password2">
-								<input type="password" placeholder="Password" name="psw" id="psw" required="">
-								<a href=""><i class="fa fa-eye-slash icon" aria-hidden="true"></i></a>
-							</div>
-							<script>
-									$(document).ready(function() {
-										$("#show_hide_password2 a").on('click', function(event) {
-											event.preventDefault();
-											if($('#show_hide_password2 input').attr("type") == "text"){
-												$('#show_hide_password2 input').attr('type', 'password');
-												$('#show_hide_password2 i').addClass( "fa-eye-slash" );
-												$('#show_hide_password2 i').removeClass( "fa-eye" );
-											}else if($('#show_hide_password2 input').attr("type") == "password"){
-												$('#show_hide_password2 input').attr('type', 'text');
-												$('#show_hide_password2 i').removeClass( "fa-eye-slash" );
-												$('#show_hide_password2 i').addClass( "fa-eye" );
-											}
-										});
-									});
-							</script>
-							<div class="styled-input" id="show_hide_password3">
-								<input type="password" placeholder="Confirm Password" name="cnfpsw" id="cnfpsw" required="">
-								<a href=""><i class="fa fa-eye-slash icon" aria-hidden="true"></i></a>
-							</div>
-							<script>
-								$(document).ready(function() {
-									$("#show_hide_password3 a").on('click', function(event) {
-										event.preventDefault();
-										if($('#show_hide_password3 input').attr("type") == "text"){
-											$('#show_hide_password3 input').attr('type', 'password');
-											$('#show_hide_password3 i').addClass( "fa-eye-slash" );
-											$('#show_hide_password3 i').removeClass( "fa-eye" );
-										}else if($('#show_hide_password3 input').attr("type") == "password"){
-											$('#show_hide_password3 input').attr('type', 'text');
-											$('#show_hide_password3 i').removeClass( "fa-eye-slash" );
-											$('#show_hide_password3 i').addClass( "fa-eye" );
-										}
-									});
-								});
-							</script>
-							<input type="submit" name="submit" value="Sign Up">
-						</form>
-						<p>
-							<a href="#">By clicking register, I agree to your terms</a>
-						</p>
-					</div>
+				</div>
+				<div class="col-sm-6">
+					<div id="search" class="input-group">
+						<input type="text" name="search" value="" placeholder="Search" class="form-control input-lg">
+						<span class="input-group-btn">
+						  <button type="button" class="btn btn-default btn-lg"><i class="fa fa-search"></i></button>
+						</span>
+					  </div>
+				</div>
+				<div class="col-sm-3">
+					<div id="cart" class="btn-group btn-block">
+							<button class="snipcart-checkout btn btn-inverse btn-block btn-lg" type="submit" name="submit" value="">
+								<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                                <span class="snipcart-items-count"></span>
+                                <span class="snipcart-total-price"></span>
+                            </button>
+					  </div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="copy-right">
-
-		<div class="container">
-
-			<p>© 2020 Kokan Crunchy. All rights reserved <!-- | Design by
-
-				<a href="http://amitkduiuxdesigner.co.in/"> Amit Kadu UI Developer.</a>-->
-
-			</p>
-
+	</header>
+	<div class="ban-top container">
+		<div class="">
+			<div class="top_nav_left">
+				<nav class="navbar navbar-default">
+					<div class="">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+							    aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav menu__list">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+										Cashew Nuts (Kaju)
+									</a>
+									<ul class="dropdown-menu dropdown-menu-right">
+										<li><a href="#">Kaju</a></li>
+										<li><a href="#">Masala Kaju</a></li>
+										<li><a href="#">Pudina Kaju</a></li>
+										<li><a href="#">Black Paper Kaju</a></li>
+										<li><a href="#">Tukda Kaju (2 split)</a></li>
+										<li><a href="#">Tukda Kaju (4 split)</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+										Almonds (Badam)
+									</a>
+									<ul class="dropdown-menu dropdown-menu-right">
+										<li><a href="#">Badam</a></li>
+										<li><a href="#">Salted Badam</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+										Raisin (Kishmish)
+									</a>
+									<ul class="dropdown-menu dropdown-menu-right">
+										<li><a href="#">Yellow Kishmish</a></li>
+										<li><a href="#">Black Kishmish</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+										Pistachio (Pista)
+									</a>
+									<ul class="dropdown-menu dropdown-menu-right">
+										<li><a href="#">Salted Pista</a></li>
+										<li><a href="#">Plain Pista</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+										Dates (Khajur)
+									</a>
+									<ul class="dropdown-menu dropdown-menu-right">
+										<li><a href="#">White Kharik (Dry Khajur)</a></li>
+										<li><a href="#">Black Kharik (Dry Khajur)</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="nav-stylehead" role="button" aria-haspopup="true" aria-expanded="false">
+										Mix Dry-Fruits
+									</a>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+										Healthy Nuts
+									</a>
+									<ul class="dropdown-menu dropdown-menu-right">
+										<li><a href="#">Broken Walnut (Akrot)</a></li>
+										<li><a href="#">Anjeer</a></li>
+										<li><a href="#">Jardalu</a></li>
+										<li><a href="#">Dates (Khajur)</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+										Kokani Mewa
+									</a>
+									<ul class="dropdown-menu dropdown-menu-right">
+										<li><a href="#">Gawathi Pohe</a></li>
+										<li><a href="#">Gawathi Tandul (Ukade)</a></li>
+										<li><a href="#">Kulith Pith</a></li>
+										<li><a href="#">Amba Poli</a></li>
+										<li><a href="#">Fanas Poli</a></li>
+										<li><a href="#">Fanas Gare</a></li>
+										<li><a href="#">Khobra Wadi</a></li>
+										<li><a href="#">Kokum Agul</a></li>
+										<li><a href="#">Kokum Sarbat</a></li>
+										<li><a href="#">Kairy Panhe Sarbat</a></li>
+										<li><a href="#">Malvani Kokum</a></li>
+										<li><a href="#">Shengdana Ladoo</a></li>
+										<li><a href="#">Sev Ladoo</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
 		</div>
-
 	</div>
-
-	<!-- //copyright -->
-
-    
-
-    <div hidden id="snipcart" data-api-key="Mzc2Mzc1YWItMmFkNi00MmU4LTliMjMtMjA3ODQzN2M1MGMzNjM3Mzk1NTYwMjc1ODg5Njk0"  data-currency="inr" ></div>
-
-<script async src="https://cdn.snipcart.com/themes/v3.0.23/default/snipcart.js"></script>
-
-    
-
-
-
-	<!-- js-files -->
-
+	<div id="account-register" class="container">
+		<ul class="breadcrumb">
+			<li><a href="index.html"><i class="fa fa-home"></i></a></li>
+			<li><a href="login.html">Account</a></li>
+			<li><a href="registration.html">Register</a></li>
+		</ul>
+		<div class="row">
+			<div id="content" class="col-sm-9">
+				<h1>Register Account</h1>
+				<p>If you already have an account with us, please login at the <a href="login.html">login page</a>.</p>
+				<form action="" method="post" class="form-horizontal">
+					<fieldset id="account">
+						<legend>Your Personal Information</legend>
+						<div class="form-group required">
+							<label class="col-sm-2 control-label"for="input-firstname">First Name</label>
+							<div class="col-sm-10">
+								<input type="text" name="firstname" placeholder="First Name" id="input-firstname" class="form-control">
+							</div>
+						</div>
+						<div class="form-group required">
+							<label class="col-sm-2 control-label"for="input-lastname">Last Name</label>
+							<div class="col-sm-10">
+								<input type="text" name="lastname" placeholder="Last Name" id="input-lastname" class="form-control">
+							</div>
+						</div>
+						<div class="form-group required">
+							<label class="col-sm-2 control-label" for="input-email">E-Mail</label>
+							<div class="col-sm-10">
+							  <input type="email" name="email" placeholder="E-Mail" id="input-email" class="form-control">
+							   </div>
+						</div>
+						<div class="form-group required">
+							<label class="col-sm-2 control-label" for="input-telephone">Telephone</label>
+							<div class="col-sm-10">
+							  <input type="tel" name="telephone" value="" placeholder="Telephone" id="input-telephone" class="form-control">
+							   </div>
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend>Your Password</legend>
+						<div class="form-group required">
+							<label for="input-password" class="col-sm-2 control-label">Password</label>
+							<div class="col-sm-10">
+								<input type="password" name="password" class="form-control" value="" placeholder="Password" id="input-password">
+							</div>
+						</div>
+						<div class="form-group required">
+							<label for="input-confirm" class="col-sm-2 control-label">Confirm Password</label>
+							<div class="col-sm-10">
+								<input type="password" name="confirm" class="form-control" value="" placeholder="Password" id="input-confirm">
+							</div>
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend>Newsletter</legend>
+						<label class="col-sm-2 control-label">Subscribe</label>
+						<div class="col-sm-10">
+							<label class="radio-inline">
+								<input type="radio" name="newsletter" value="1">Yes
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="newsletter" value="0" checked="checked">No
+							</label>
+						</div>
+					</fieldset>
+					<div class="buttons">
+						<div class="pull-right">
+							I have read and agree to the
+							<a href="" class="agree">Privacy Policy</a>
+							<input type="checkbox" name="agree" value="1">&nbsp;
+							<input type="submit" value="Continue" class="btn btn-primary">
+						</div>
+					</div>
+				</form>
+			</div>
+			<aside id="column-right" class="col-sm-3 hidden-xs">
+				<div class="list-group">
+					<a href="#" class="list-group-item">Login</a>
+					<a href="13" class="list-group-item">Register</a>
+					<a href="13" class="list-group-item">Forgot Password</a>
+					<a href="13" class="list-group-item">My Account</a>
+					<a href="13" class="list-group-item">Address Book</a>
+					<a href="13" class="list-group-item">Wish List</a>
+					<a href="13" class="list-group-item">Order History</a>
+					<a href="13" class="list-group-item">Downloads</a>
+					<a href="13" class="list-group-item">Recurring Payments</a>
+					<a href="13" class="list-group-item">Reward Points</a>
+					<a href="13" class="list-group-item">Returns</a>
+					<a href="13" class="list-group-item">Transactions</a>
+					<a href="13" class="list-group-item">Newsletter</a>
+				</div>
+			</aside>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="footer-info w3-agileits-info">
+				<div class="col-sm-6 address-right">
+					<div class="col-xs-6 footer-grids">
+						<h3>Information</h3>
+						<ul>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Delivery Information</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms and Conditions</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-6 footer-grids">
+						<h3>Customer Service</h3>
+						<ul>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Returns</a></li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="col-sm-6 address-right">
+					<div class="col-xs-6 footer-grids">
+						<h3>Extras</h3>
+						<ul>
+							<li><a href="#">Brands</a></li>
+							<li><a href="#">Gift Certificates</a></li>
+							<li><a href="#">Affiliate</a></li>
+							<li><a href="#">Specials</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-6 footer-grids">
+						<h3>My Account</h3>
+						<ul>
+							<li><a href="#">My Account</a></li>
+							<li><a href="#">Order History</a></li>
+							<li><a href="#">Wish List</a></li>
+							<li><a href="#">Newsletter</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</footer>
+	<div class="copy-right">
+		<div class="container">
+			<p>© 2020 Kokan Crunchy. All rights reserved | Design by
+				<a href="http://amitkduiuxdesigner.co.in/"> Amit Kadu UI Developer.</a>
+			</p>
+		</div>
+	</div>
+	<div hidden id="snipcart" data-api-key="Mzc2Mzc1YWItMmFkNi00MmU4LTliMjMtMjA3ODQzN2M1MGMzNjM3Mzk1NTYwMjc1ODg5Njk0"  data-currency="inr" ></div>
+	<script async src="https://cdn.snipcart.com/themes/v3.0.23/default/snipcart.js"></script>
 	<!-- jquery -->
-
 	<script src="js/jquery-2.1.4.min.js"></script>
-
-	<!-- //jquery -->
-
-
-
-	<!-- popup modal (for signin & signup)-->
-
-	<script src="js/jquery.magnific-popup.js"></script>
-
-	<script>
-
-		$(document).ready(function () {
-
-			$('.popup-with-zoom-anim').magnificPopup({
-
-				type: 'inline',
-
-				fixedContentPos: false,
-
-				fixedBgPos: true,
-
-				overflowY: 'auto',
-
-				closeBtnInside: true,
-
-				preloader: false,
-
-				midClick: true,
-
-				removalDelay: 300,
-
-				mainClass: 'my-mfp-zoom-in'
-
-			});
-
-
-
-		});
-
-	</script>
-
-	<!-- Large modal -->
-
-	<!-- <script>
-
-		$('#').modal('show');
-
-	</script> -->
-
-	<!-- //popup modal (for signin & signup)-->
-
-
-
-	<!-- cart-js -->
-
-	<script src="js/minicart.js"></script>
-
-	<script>
-
-		paypalm.minicartk.render(); //use only unique class names other than paypalm.minicartk.Also Replace same class name in css and minicart.min.js
-
-
-
-		paypalm.minicartk.cart.on('checkout', function (evt) {
-
-			var items = this.items(),
-
-				len = items.length,
-
-				total = 0,
-
-				i;
-
-
-
-			// Count the number of each item in the cart
-
-			for (i = 0; i < len; i++) {
-
-				total += items[i].get('quantity');
-
-			}
-
-
-
-			if (total < 3) {
-
-				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
-
-				evt.preventDefault();
-
-			}
-
-		});
-
-	</script>
-
-	<!-- //cart-js -->
-
-
-
-	<!-- price range (top products) -->
-
-	<script src="js/jquery-ui.js"></script>
-
-	<script>
-
-		//<![CDATA[ 
-
-		$(window).load(function () {
-
-			$("#slider-range").slider({
-
-				range: true,
-
-				min: 0,
-
-				max: 9000,
-
-				values: [50, 6000],
-
-				slide: function (event, ui) {
-
-					$("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
-
-				}
-
-			});
-
-			$("#amount").val("$" + $("#slider-range").slider("values", 0) + " - $" + $("#slider-range").slider("values", 1));
-
-
-
-		}); //]]>
-
-	</script>
-
-	<!-- //price range (top products) -->
-
-
-
-	<!-- flexisel (for special offers) -->
-
-	<script src="js/jquery.flexisel.js"></script>
-
-	<script>
-
-		$(window).load(function () {
-
-			$("#flexiselDemo1").flexisel({
-
-				visibleItems: 3,
-
-				animationSpeed: 1000,
-
-				autoPlay: true,
-
-				autoPlaySpeed: 3000,
-
-				pauseOnHover: true,
-
-				enableResponsiveBreakpoints: true,
-
-				responsiveBreakpoints: {
-
-					portrait: {
-
-						changePoint: 480,
-
-						visibleItems: 1
-
-					},
-
-					landscape: {
-
-						changePoint: 640,
-
-						visibleItems: 2
-
-					},
-
-					tablet: {
-
-						changePoint: 768,
-
-						visibleItems: 2
-
-					}
-
-				}
-
-			});
-
-
-
-		});
-
-	</script>
-
-	<!-- //flexisel (for special offers) -->
-
-
-
-	<!-- password-script -->
-
-	<script>
-
-		window.onload = function () {
-
-			document.getElementById("password1").onchange = validatePassword;
-
-			document.getElementById("password2").onchange = validatePassword;
-
-		}
-
-
-
-		function validatePassword() {
-
-			var pass2 = document.getElementById("password2").value;
-
-			var pass1 = document.getElementById("password1").value;
-
-			if (pass1 != pass2)
-
-				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
-
-			else
-
-				document.getElementById("password2").setCustomValidity('');
-
-			//empty string means no validation error
-
-		}
-
-	</script>
-
-	<!-- //password-script -->
-
-
-
-	<!-- smoothscroll -->
-
-	<script src="js/SmoothScroll.min.js"></script>
-
-	<!-- //smoothscroll -->
-
-
-
-	<!-- start-smooth-scrolling -->
-
-	<script src="js/move-top.js"></script>
-
-	<script src="js/easing.js"></script>
-
-	<script>
-
-		jQuery(document).ready(function ($) {
-
-			$(".scroll").click(function (event) {
-
-				event.preventDefault();
-
-
-
-				$('html,body').animate({
-
-					scrollTop: $(this.hash).offset().top
-
-				}, 1000);
-
-			});
-
-		});
-
-	</script>
-
-	<!-- //end-smooth-scrolling -->
-
-
-
-	<!-- smooth-scrolling-of-move-up -->
-
-	<script>
-
-		$(document).ready(function () {
-
-			/*
-
-			var defaults = {
-
-				containerID: 'toTop', // fading element id
-
-				containerHoverID: 'toTopHover', // fading element hover id
-
-				scrollSpeed: 1200,
-
-				easingType: 'linear' 
-
-			};
-
-			*/
-
-			$().UItoTop({
-
-				easingType: 'easeOutQuart'
-
-			});
-
-
-
-		});
-
-	</script>
-
-	<!-- //smooth-scrolling-of-move-up -->
-
-
-
-	<!-- for bootstrap working -->
-
 	<script src="js/bootstrap.js"></script>
-
-	<!-- //for bootstrap working -->
-
-	<!-- //js-files -->
 </body>
+</html>

@@ -14,13 +14,20 @@
 			window.scrollTo(0, 1);
 		}
 	</script>
+	<!--//tags -->
 	<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.23/default/snipcart.css" />
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/font-awesome.css" rel="stylesheet">
+	<!--pop-up-box-->
+	<!-- <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" /> -->
+	<!--//pop-up-box-->
+	<!-- price range -->
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui1.css">
+	<!-- fonts -->
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/minicart/3.0.5/minicart.min.js"></script> -->
 </head>
 <body>
 	<nav id="top">
@@ -44,7 +51,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="login.html" id="wishlist-total" title="Wish List (0)">
+						<a href="" id="wishlist-total" title="Wish List (0)">
 							<i class="fa fa-heart"></i>
 							<span class="hidden-xs hidden-sm hidden-md">Wish List (0)</span>
 						</a>
@@ -302,6 +309,42 @@
 										<button type="button" data-toggle="tooltip" title="" data-original-title="Add to Wish List"><i class="fa fa-heart"></i></button>
 										<button type="button" data-toggle="tooltip" title="" data-original-title="Compare this Product"><i class="fa fa-exchange"></i></button>
 									</div>
+									<!-- <select id="select_weight_kaju">
+										<option data-price="0" value="250GM">250 GM</option>
+										<option data-price="200" value="500GM">500 GM</option>
+										<option data-price="600"  value="1KG" selected>1 KG</option>
+									</select> -->
+									<!-- <div class="snipcart-details">
+                                    	<input id="badam" type="submit" name="submit" value="Add to Cart"
+                                        class="snipcart-add-item button"
+                                        data-item-id="1"
+                                        data-item-price="200"
+                                        data-item-url="/"
+                                        data-item-image="images/kaju.jpg"
+                                        data-item-name="Kaju"
+                                        data-item-custom2-name="Weight"
+                                        data-item-custom2-options="1KG[+600.00]|500GM[+200.00]|250GM">
+                                    </div> -->
+                                    <!-- <script>
+									const button = document.querySelector('#kaju')
+									const select = document.querySelector('#select_weight_kaju');
+									select.addEventListener('change', () => {
+  									// Sets the default frame color when adding the item
+  									button.setAttribute("data-item-custom1-value", select.value)
+									});
+                                    </script>
+
+
+									<script>
+										var basePriceKaju = 200.00;
+										$("#select_weight_kaju").change(function() {
+											newPrice = basePriceKaju;
+											$("#select_weight_kaju option:selected").each(function() {
+												newPrice += $(this).data('price')
+											});
+											$("#dynamic_price_kaju").html("₹" + newPrice + ".00");
+										});
+									</script> -->
 								</div>
 							</div>
 						</div>
@@ -326,6 +369,39 @@
 										<button type="button" data-toggle="tooltip" title="" data-original-title="Add to Wish List"><i class="fa fa-heart"></i></button>
 										<button type="button" data-toggle="tooltip" title="" data-original-title="Compare this Product"><i class="fa fa-exchange"></i></button>
 									</div>
+									<!-- <select id="select_weight_badam">
+										<option data-price="0" value="250GM">250 GM</option>
+										<option data-price="187" value="500GM">500 GM</option>
+										<option data-price="562" value="1KG" selected>1 KG</option>
+									</select> -->
+                                    <!-- <div class="snipcart-details">
+                                    	<input id="badam" type="submit" name="submit" value="Add to Cart"
+                                        class="snipcart-add-item button"
+                                        data-item-id="2"
+                                        data-item-price="188"
+                                        data-item-url="/"
+                                        data-item-image="images/badam.jpg"
+                                        data-item-name="Badam"
+                                        data-item-custom2-name="Weight"
+                                        data-item-custom2-options="1KG[+562.00]|500GM[+187.00]|250GM">
+                                    </div>
+                                    <script>
+									const button1 = document.querySelector('#badam')
+									const select1 = document.querySelector('#select_weight_badam');
+									select1.addEventListener('change', () => {
+  									button1.setAttribute("data-item-custom2-value", select1.value)
+									});
+                                    </script> -->
+									<!-- <script>
+										var basePriceBadam = 188.00;
+										$("#select_weight_badam").change(function() {
+											newPrice = basePriceBadam;
+											$("#select_weight_badam option:selected").each(function() {
+												newPrice += $(this).data('price')
+											});
+											$("#dynamic_price_badam").html("₹" + newPrice + ".00");
+										});
+									</script> -->
 								</div>
 							</div>
 						</div>
@@ -350,6 +426,39 @@
 										<button type="button" data-toggle="tooltip" title="" data-original-title="Add to Wish List"><i class="fa fa-heart"></i></button>
 										<button type="button" data-toggle="tooltip" title="" data-original-title="Compare this Product"><i class="fa fa-exchange"></i></button>
 									</div>
+									<!-- <select id="select_weight_yelkish">
+										<option data-price="0" value="250GM">250 GM</option>
+										<option data-price="100" value="500GM">500 GM</option>
+										<option data-price="300" value="1KG" selected>1 KG</option>
+									</select> -->
+                                    <!-- <div class="snipcart-details">
+                                    	<input id="yelkish" type="submit" name="submit" value="Add to Cart"
+                                        class="snipcart-add-item button"
+                                        data-item-id="3"
+                                        data-item-price="100"
+                                        data-item-url="/"
+                                        data-item-image="images/yellow-kishmish.jpg"
+                                        data-item-name="Yellow Kishmish"
+                                        data-item-custom3-name="Weight"
+                                        data-item-custom3-options="1KG[+300.00]|500GM[+100.00]|250GM">
+                                    </div>
+                                    <script>
+									const button2 = document.querySelector('#yelkish')
+									const select2 = document.querySelector('#select_weight_yelkish');
+									select2.addEventListener('change', () => {
+  									button2.setAttribute("data-item-custom3-value", select2.value)
+									});
+                                    </script>
+									<script>
+										var basePriceYKish = 100.00;
+										$("#select_weight_yelkish").change(function() {
+											newPrice = basePriceYKish;
+											$("#select_weight_yelkish option:selected").each(function() {
+												newPrice += $(this).data('price')
+											});
+											$("#dynamic_price_yelkish").html("₹" + newPrice + ".00");
+										});
+									</script> -->
 								</div>
 							</div>
 						</div>
@@ -374,6 +483,39 @@
 										<button type="button" data-toggle="tooltip" title="" data-original-title="Add to Wish List"><i class="fa fa-heart"></i></button>
 										<button type="button" data-toggle="tooltip" title="" data-original-title="Compare this Product"><i class="fa fa-exchange"></i></button>
 									</div>
+									<!-- <select id="select_weight_blkish">
+										<option data-price="0" value="250GM">250 GM</option>
+										<option data-price="112" value="500GM">500 GM</option>
+										<option data-price="337" value="1KG" selected>1 KG</option>
+									</select>
+									<div class="snipcart-details">
+                                    	<input id="blkish" type="submit" name="submit" value="Add to Cart"
+                                        class="snipcart-add-item button"
+                                        data-item-id="4"
+                                        data-item-price="113"
+                                        data-item-url="/"
+                                        data-item-image="images/black-kishmish.jpg"
+                                        data-item-name="Black Ksihmish"
+                                        data-item-custom4-name="Weight"
+                                        data-item-custom4-options="1KG[+337.00]|500GM[+112.00]|250GM">
+                                    </div>
+                                    <script>
+									const button3 = document.querySelector('#blkish');
+									const select3 = document.querySelector('#select_weight_blkish');
+									select3.addEventListener('change', () => {
+  										button3.setAttribute("data-item-custom4-value", select3.value);
+									});
+                                    </script>
+									<script>
+										var basePriceBKish = 113.00;
+										$("#select_weight_blkish").change(function() {
+											newPrice = basePriceBKish;
+											$("#select_weight_blkish option:selected").each(function() {
+												newPrice += $(this).data('price')
+											});
+											$("#dynamic_price_blkish").html("₹" + newPrice + ".00");
+										});
+									</script> -->
 								</div>
 							</div>
 						</div>
